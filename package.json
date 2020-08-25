@@ -1,0 +1,27 @@
+{
+  "name": "shared-components-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/CristhianParra/shared-components-example.git",
+  "author": "Cristhian Camilo Parra Moreno <cristhian.parra@avantica.net>",
+  "license": "MIT",
+  "scripts": {
+    "start": "start-storybook -p 9001 -c .storybook",
+    "build": "webpack -p"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
+    "@storybook/addon-essentials": "^6.0.18",
+    "@storybook/cli": "^6.0.18",
+    "@storybook/react": "^6.0.18",
+    "prettier": "^2.1.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
+}
