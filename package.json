@@ -1,7 +1,7 @@
 {
   "name": "shared-components-example",
   "version": "1.0.0",
-  "main": "dist/index.js",
+  "main": "index.js",
   "repository": "https://github.com/CristhianParra/shared-components-example.git",
   "author": "Cristhian Camilo Parra Moreno <cristhian.parra@avantica.net>",
   "license": "MIT",
