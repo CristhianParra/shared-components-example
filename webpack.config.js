@@ -23,6 +23,6 @@ module.exports = {
     path: path.join(__dirname, "dist/bundles"),
     publicPath: "bundles",
     filename: "[name].umd.js",
-    libraryTarget: "umd",
+    libraryTarget: "commonjs",
   },
 };
