@@ -26,13 +26,3 @@ module.exports = {
     libraryTarget: "umd",
   },
 };
-
-
-[name].js
-function(...params) {
-
-}
-
-
-[name].d.ts
-8 overloadsa
