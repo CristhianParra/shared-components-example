@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import { AppetizeButton } from "./AppetizeButton";
 
 export default {
@@ -6,10 +6,10 @@ export default {
   component: AppetizeButton,
 };
 
-const Template = (args) => <AppetizeButton {...args} />;
+const Template = (args: any) => <AppetizeButton {...args} />;
 
 export const FirstStory = Template.bind({});
 
 FirstStory.args = {
-    label: "Click me!"
+  label: "Click me!",
 };

@@ -1,28 +1,26 @@
 const entry = require("webpack-glob-entry");
 const path = require("path");
 
-console.log(entry("src/modules/**/*.public-api.js"));
+console.log(entry("src/modules/**/*.public-api.ts"));
 
 module.exports = {
-  module: {
-    rules: [
-      {
-        test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
-        use: {
-          loader: "babel-loader",
-          options: {
-            presets: ["@babel/preset-env", "@babel/react"],
-          },
-        },
-      },
-    ],
-  },
-  entry: entry("./src/modules/**/*.public-api.js"),
+  entry: entry("./src/modules/**/*.public-api.ts"),
   output: {
     path: path.join(__dirname, "dist/bundles"),
     publicPath: "bundles",
     filename: "[name].umd.js",
-    libraryTarget: "commonjs",
+    libraryTarget: "umd",
+  },
+  module: {
+    rules: [
+      {
+        test: /\.tsx?$/,
+        use: "ts-loader",
+        exclude: [/node_modules/],
+      },
+    ],
+  },
+  resolve: {
+    extensions: [".tsx", ".ts", ".js"],
   },
 };
