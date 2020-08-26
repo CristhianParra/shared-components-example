@@ -1,3 +1,8 @@
+const entry = require("webpack-glob-entry");
+const path = require("path");
+
+console.log(entry("src/modules/**/*.public-api.js"));
+
 module.exports = {
   module: {
     rules: [
@@ -13,9 +18,21 @@ module.exports = {
       },
     ],
   },
+  entry: entry("./src/modules/**/*.public-api.js"),
   output: {
-    filename: "index.js",
-    library: "",
-    libraryTarget: "commonjs",
+    path: path.join(__dirname, "dist/bundles"),
+    publicPath: "bundles",
+    filename: "[name].umd.js",
+    libraryTarget: "umd",
   },
 };
+
+
+[name].js
+function(...params) {
+
+}
+
+
+[name].d.ts
+8 overloadsa
