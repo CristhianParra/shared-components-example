@@ -1,0 +1,4 @@
+{
+  "bin": "./src/modules/bin/index.ts",
+  "components": "./src/modules/components/index.ts"
+}

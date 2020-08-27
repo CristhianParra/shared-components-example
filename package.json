@@ -1,13 +1,13 @@
 {
   "name": "shared-components-example",
   "version": "1.0.0",
-  "main": "dist/bundles/appetize-button.umd.js",
+  "main": "./index.js",
   "repository": "https://github.com/CristhianParra/shared-components-example.git",
   "author": "Cristhian Camilo Parra Moreno <cristhian.parra@avantica.net>",
   "license": "MIT",
   "scripts": {
     "start": "start-storybook -p 9001 -c .storybook",
-    "build": "webpack -p"
+    "build": "webpack -p && node scripts/bundle.js"
   },
   "dependencies": {
     "react": "^16.13.1",
@@ -21,7 +21,6 @@
     "ts-loader": "^8.0.3",
     "typescript": "^4.0.2",
     "webpack": "^4.44.1",
-    "webpack-cli": "^3.3.12",
-    "webpack-glob-entry": "^2.1.1"
+    "webpack-cli": "^3.3.12"
   }
 }

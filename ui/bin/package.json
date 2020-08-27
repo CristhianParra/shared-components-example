@@ -1,0 +1,5 @@
+{
+  "name": "@appetize/ui/bin",
+  "main": "../bundles/bin.umd.js",
+  "typings": "./index.d.ts"
+}

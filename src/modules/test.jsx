@@ -1,6 +1,6 @@
 import React from "react";
-import { AppetizeButton } from "./appetize-button/AppetizeButton";
-import * as A from "../../dist/bundles/appetize-button.umd";
+import { AppetizeButton } from "./components/appetize-button/AppetizeButton";
+import * as A from "../../ui/bundles/appetize-button.umd";
 
 export function Test() {
   return (

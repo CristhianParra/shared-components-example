@@ -1,15 +1,15 @@
-const entry = require("webpack-glob-entry");
 const path = require("path");
-
-console.log(entry("src/modules/**/*.public-api.ts"));
+const publicApi = require("./public-api.json");
 
 module.exports = {
-  entry: entry("./src/modules/**/*.public-api.ts"),
+  entry: publicApi,
   output: {
-    path: path.join(__dirname, "dist/bundles"),
-    publicPath: "bundles",
+    path: path.join(__dirname, "ui/bundles"),
     filename: "[name].umd.js",
     libraryTarget: "umd",
+  },
+  resolve: {
+    extensions: [".tsx", ".ts", ".js"],
   },
   module: {
     rules: [
@@ -19,8 +19,5 @@ module.exports = {
         exclude: [/node_modules/],
       },
     ],
-  },
-  resolve: {
-    extensions: [".tsx", ".ts", ".js"],
   },
 };

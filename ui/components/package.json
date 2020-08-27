@@ -1,0 +1,5 @@
+{
+  "name": "@appetize/ui/components",
+  "main": "../bundles/components.umd.js",
+  "typings": "./index.d.ts"
+}
